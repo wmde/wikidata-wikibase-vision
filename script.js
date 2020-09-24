@@ -1,3 +1,11 @@
+/**
+ * The bulk of this code was taken from https://gojs.net/latest/samples/mindMap.html for evaluation.
+ * The source is at https://github.com/NorthwoodsSoftware/GoJS/blob/master/samples/mindMap.html
+ *
+ * Copyright 1998-2020 by Northwoods Software Corporation.
+ * Used for evaluation https://gojs.net/latest/license.html
+ */
+
 function makeRequest(method, url, data) {
   return new Promise(function (resolve, reject) {
       var xhr = new XMLHttpRequest();
