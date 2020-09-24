@@ -1,2 +1,2 @@
-# Wikidata & WIkibase, Vision Diagram
+# Wikidata & Wikibase, Vision Diagram
 
