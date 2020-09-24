@@ -1,3 +1,31 @@
+function makeRequest(method, url, data) {
+  return new Promise(function (resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.onload = function () {
+          if (this.status >= 200 && this.status < 300) {
+              resolve(xhr.response);
+          } else {
+              reject({
+                  status: this.status,
+                  statusText: xhr.statusText
+              });
+          }
+      };
+      xhr.onerror = function () {
+          reject({
+              status: this.status,
+              statusText: xhr.statusText
+          });
+      };
+      if (method == "POST" && data) {
+          xhr.send(data);
+      } else {
+          xhr.send();
+      }
+  });
+}
+
 var $ = go.GraphObject.make;
 
   myDiagram = $(go.Diagram, "myDiagramDiv", {
@@ -375,9 +403,18 @@ function save() {
   myDiagram.isModified = false;
 }
 function load() {
-  myDiagram.model = go.Model.fromJson(
-    document.getElementById("mySavedModel").value
-  );
+  if(document.getElementById("mySavedModel").value == ""){
+    makeRequest('GET', "./data.json").then(function (data) {
+      document.getElementById("mySavedModel").value = data;
+      myDiagram.model = go.Model.fromJson(
+        document.getElementById("mySavedModel").value
+      );
+  });
+  } else {
+    myDiagram.model = go.Model.fromJson(
+      document.getElementById("mySavedModel").value
+    );
+  }
 }
 
 
