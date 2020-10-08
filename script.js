@@ -76,7 +76,8 @@ var $ = go.GraphObject.make;
       // remember not only the text string but the scale and the font in the node data
       new go.Binding("text", "text").makeTwoWay(),
       new go.Binding("scale", "scale").makeTwoWay(),
-      new go.Binding("font", "font").makeTwoWay()
+      new go.Binding("font", "font").makeTwoWay(),
+      new go.Binding("background", "background").makeTwoWay()
     ),
     $(
       go.Shape,
@@ -153,6 +154,11 @@ var $ = go.GraphObject.make;
     $("ContextMenuButton", $(go.TextBlock, "Bold/Normal"), {
       click: function (e, obj) {
         toggleTextWeight(obj);
+      }
+    }),
+    $("ContextMenuButton", $(go.TextBlock, "Active/Inactive"), {
+      click: function (e, obj) {
+        toggleTextActiveBackground(obj);
       }
     }),
     $("ContextMenuButton", $(go.TextBlock, "Copy"), {
@@ -280,24 +286,6 @@ var $ = go.GraphObject.make;
   load();
 ////}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function spotConverter(dir, from) {
   if (dir === "left") {
     return from ? go.Spot.Left : go.Spot.Right;
@@ -328,6 +316,19 @@ function toggleTextWeight(obj) {
     tb.font = tb.font.substr(idx + 5);
   }
   adorn.diagram.commitTransaction("Change Text Weight");
+}
+
+function toggleTextActiveBackground(obj) {
+  var adorn = obj.part;
+  adorn.diagram.startTransaction("Change Text Active Background");
+  var node = adorn.adornedPart;
+  var tb = node.findObject("TEXT");
+  if (tb.background == "lightgreen") {
+    tb.background = "";
+  } else {
+    tb.background = "lightgreen";
+  }
+  adorn.diagram.commitTransaction("Change Text Active Background");
 }
 
 function updateNodeDirection(node, dir) {
