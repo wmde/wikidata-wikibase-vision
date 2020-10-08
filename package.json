@@ -1,0 +1,24 @@
+{
+  "name": "wikidata-wikibase-vision",
+  "version": "1.0.0",
+  "description": "This vision diagram evaluates GoJS for use in such a diagram.",
+  "main": "render.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "gojs": "^2.1.26",
+    "puppeteer": "^5.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addshore/wikidata-wikibase-vision.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/addshore/wikidata-wikibase-vision/issues"
+  },
+  "homepage": "https://github.com/addshore/wikidata-wikibase-vision#readme"
+}
