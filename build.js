@@ -37,7 +37,7 @@ const parseDataUrl = (dataUrl) => {
   const imageData = await page.evaluate(() => {
     window.myDiagram.animationManager.stopAnimation();
     return window.myDiagram.makeImageData({
-      background: window.myDiagram.div.style.backgroundColor
+      background: "white"
     });
   });
 
