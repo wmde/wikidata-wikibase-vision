@@ -4,6 +4,8 @@ You can interactively alter this diagram at https://addshore.github.io/wikidata-
 
 Once you have made changes you can create a PR with the updated JSON.
 
+![](https://addshore.github.io/wikidata-wikibase-vision/diagram.png)
+
 ## Repo Utils
 
 `npm run serve` serves the index.html page (which is also hosted on GitHub pages)
