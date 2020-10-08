@@ -8,7 +8,7 @@ Once you have made changes you can create a PR with the updated JSON.
 
 `npm run serve` serves the index.html page (which is also hosted on GitHub pages)
 
-`npm run render` renders a PNG version of the diagram into the `/out` directory that can be used for "releases".
+`npm run build` renders a PNG version of the diagram into the `/out` directory that can be used for "releases".
 
 ## GoJs
 

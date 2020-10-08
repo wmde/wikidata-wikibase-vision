@@ -43,10 +43,10 @@ const parseDataUrl = (dataUrl) => {
 
   // Output the GoJS makeImageData as a .png:
   const { buffer } = parseDataUrl(imageData);
-  fs.writeFileSync('out/diagram-screenshot.png', buffer, 'base64');
+  fs.writeFileSync('diagram.png', buffer, 'base64');
 
   // Output a page screenshot
-  await page.screenshot({ path: 'out/page-screenshot.png' });
+  await page.screenshot({ path: 'page.png' });
   await browser.close();
 
   // Stop everything (including the server)
