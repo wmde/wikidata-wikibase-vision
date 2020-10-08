@@ -20,11 +20,14 @@ const parseDataUrl = (dataUrl) => {
 };
 
 (async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    headless:true,
+    args: ['--font-render-hinting=medium']
+  });
   const page = await browser.newPage();
 
   // From https://stackoverflow.com/a/48035121/4746236
-  await page.setViewport({ width: 1680, height: 1050});
+  await page.setViewport({ width: 1920, height: 1080});
 
   // This does not have to be a page on the web, it can be a localhost page, or file://
   await page.goto('http://localhost:3000', {

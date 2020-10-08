@@ -42,7 +42,7 @@ var $ = go.GraphObject.make;
     "commandHandler.copiesParentKey": true,
     "commandHandler.deletesTree": true,
     "draggingTool.dragsTree": true,
-    "undoManager.isEnabled": true
+    "undoManager.isEnabled": true,
   });
 
   // when the document is modified, add a "*" to the title and enable the "Save" button
@@ -66,7 +66,11 @@ var $ = go.GraphObject.make;
       go.TextBlock,
       {
         name: "TEXT",
-        minSize: new go.Size(30, 15),
+        font: "9pt sans-serif",
+        margin: 1,
+        maxLines: 1,
+        textAlign: 'left',
+        minSize: new go.Size(20, 15),
         editable: true
       },
       // remember not only the text string but the scale and the font in the node data
@@ -79,7 +83,7 @@ var $ = go.GraphObject.make;
       "LineH",
       {
         stretch: go.GraphObject.Horizontal,
-        strokeWidth: 3,
+        strokeWidth: 2,
         height: 3,
         // this line shape is the port -- what links connect with
         portId: "",
@@ -113,7 +117,7 @@ var $ = go.GraphObject.make;
       go.Panel,
       "Auto",
       // this Adornment has a rectangular blue Shape around the selected node
-      $(go.Shape, { fill: null, stroke: "dodgerblue", strokeWidth: 3 }),
+      $(go.Shape, { fill: null, stroke: "dodgerblue", strokeWidth: 2 }),
       $(go.Placeholder, { margin: new go.Margin(4, 4, 0, 4) })
     ),
     // and this Adornment has a Button to the right of the selected node
@@ -192,7 +196,7 @@ var $ = go.GraphObject.make;
     },
     $(
       go.Shape,
-      { strokeWidth: 3 },
+      { strokeWidth: 2 },
       new go.Binding("stroke", "toNode", function (n) {
         if (n.data.brush) return n.data.brush;
         return "black";
@@ -373,7 +377,7 @@ function layoutAngle(parts, angle) {
     angle: angle,
     arrangement: go.TreeLayout.ArrangementFixedRoots,
     nodeSpacing: 5,
-    layerSpacing: 20,
+    layerSpacing: 50,
     setsPortSpot: false, // don't set port spots since we're managing them with our spotConverter function
     setsChildPortSpot: false
   });
