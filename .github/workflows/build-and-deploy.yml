@@ -15,8 +15,7 @@ jobs:
         run: |
           npm install
           npm run build
-          mkdir -p ./build && cp *.js *.html *.json *.png "$_"
-          mkdir -p ./build/node_modules/gojs/release/ && cp node_modules/gojs/release/go-debug.js "$_"
+          mkdir -p ./build && cp *.js *.html *.png data.json node_modules/gojs/release/go.js "$_"
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
