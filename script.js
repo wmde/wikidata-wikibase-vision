@@ -43,6 +43,8 @@ var $ = go.GraphObject.make;
     "commandHandler.deletesTree": true,
     "draggingTool.dragsTree": true,
     "undoManager.isEnabled": true,
+    // fast tooltips to allow them to be easily discoverable
+    "toolManager.hoverDelay": 20,
   });
 
   // when the document is modified, add a "*" to the title and enable the "Save" button
@@ -57,11 +59,36 @@ var $ = go.GraphObject.make;
     }
   });
 
+  // Tooltip stuff from https://gojs.net/latest/intro/HTMLInteraction.html
+  function showToolTip(obj, diagram, tool) {
+    if(!obj.data.tooltip){
+      return;
+    }
+    var toolTipDIV = document.getElementById('toolTipDIV');
+    var pt = diagram.lastInput.viewPoint;
+    toolTipDIV.style.left = (pt.x + 10) + "px";
+    toolTipDIV.style.top = (pt.y + 80) + "px";
+    document.getElementById('toolTipParagraph').textContent = obj.data.tooltip;
+    toolTipDIV.style.display = "block";
+  }
+  function hideToolTip(diagram, tool) {
+   var toolTipDIV = document.getElementById('toolTipDIV');
+   toolTipDIV.style.display = "none";
+  }
+  var myToolTip = $(go.HTMLInfo, {
+    show: showToolTip,
+    hide: hideToolTip
+  });
+
+
   // a node consists of some text with a line shape underneath
   myDiagram.nodeTemplate = $(
     go.Node,
     "Vertical",
-    { selectionObjectName: "TEXT" },
+    {
+      selectionObjectName: "TEXT",
+      toolTip: myToolTip,
+    },
     $(
       go.TextBlock,
       {
@@ -71,7 +98,7 @@ var $ = go.GraphObject.make;
         maxLines: 1,
         textAlign: 'left',
         minSize: new go.Size(20, 15),
-        editable: true
+        editable: true,
       },
       // remember not only the text string but the scale and the font in the node data
       new go.Binding("text", "text").makeTwoWay(),
