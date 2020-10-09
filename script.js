@@ -141,6 +141,26 @@ var $ = go.GraphObject.make;
   // and to perform a limited tree layout starting at that node
   myDiagram.nodeTemplate.contextMenu = $(
     "ContextMenu",
+    $("ContextMenuButton", $(go.TextBlock, "State - Unknown"), {
+      click: function (e, obj) {
+        toggleTextUnknownBackground(obj);
+      }
+    }),
+    $("ContextMenuButton", $(go.TextBlock, "State - Not Started"), {
+      click: function (e, obj) {
+        toggleTextNotStartedBackground(obj);
+      }
+    }),
+    $("ContextMenuButton", $(go.TextBlock, "State - Started"), {
+      click: function (e, obj) {
+        toggleTextStartedBackground(obj);
+      }
+    }),
+    $("ContextMenuButton", $(go.TextBlock, "State - Complete"), {
+      click: function (e, obj) {
+        toggleTextCompleteBackground(obj);
+      }
+    }),
     $("ContextMenuButton", $(go.TextBlock, "Bigger"), {
       click: function (e, obj) {
         changeTextSize(obj, 1.1);
@@ -154,11 +174,6 @@ var $ = go.GraphObject.make;
     $("ContextMenuButton", $(go.TextBlock, "Bold/Normal"), {
       click: function (e, obj) {
         toggleTextWeight(obj);
-      }
-    }),
-    $("ContextMenuButton", $(go.TextBlock, "Active/Inactive"), {
-      click: function (e, obj) {
-        toggleTextActiveBackground(obj);
       }
     }),
     $("ContextMenuButton", $(go.TextBlock, "Copy"), {
@@ -318,17 +333,33 @@ function toggleTextWeight(obj) {
   adorn.diagram.commitTransaction("Change Text Weight");
 }
 
-function toggleTextActiveBackground(obj) {
+function setTextBackground(obj, background) {
   var adorn = obj.part;
   adorn.diagram.startTransaction("Change Text Active Background");
   var node = adorn.adornedPart;
   var tb = node.findObject("TEXT");
-  if (tb.background == "lightgreen") {
-    tb.background = "";
+  if (tb.background == background) {
+    delete tb.background;
   } else {
-    tb.background = "lightgreen";
+    tb.background = background;
   }
   adorn.diagram.commitTransaction("Change Text Active Background");
+}
+
+function toggleTextCompleteBackground(obj) {
+  setTextBackground(obj, "lightgreen")
+}
+
+function toggleTextStartedBackground(obj) {
+  setTextBackground(obj, "lightsalmon")
+}
+
+function toggleTextNotStartedBackground(obj) {
+  setTextBackground(obj, "lightcoral")
+}
+
+function toggleTextUnknownBackground(obj) {
+  setTextBackground(obj, null)
 }
 
 function updateNodeDirection(node, dir) {
