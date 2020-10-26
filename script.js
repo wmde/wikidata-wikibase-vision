@@ -470,7 +470,11 @@ function layoutAll() {
 
 // Show the diagram's model in JSON format
 function save() {
-  document.getElementById("mySavedModel").value = myDiagram.model.toJson();
+  document.getElementById("mySavedModel").value = JSON.stringify(
+    JSON.parse(myDiagram.model.toJson()),
+    null,
+    2
+  );
   myDiagram.isModified = false;
 }
 function load() {
@@ -486,6 +490,12 @@ function load() {
       document.getElementById("mySavedModel").value
     );
   }
+
+  document.getElementById("mySavedModel").value = JSON.stringify(
+    JSON.parse(document.getElementById("mySavedModel").value),
+    null,
+    2
+  );
 }
 
 
