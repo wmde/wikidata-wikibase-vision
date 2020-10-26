@@ -47,6 +47,49 @@ var $ = go.GraphObject.make;
     "toolManager.hoverDelay": 20,
   });
 
+  // Title
+  myDiagram.add(
+    $(go.Part,
+      {
+        layerName: "Grid",  // must be in a Layer that is Layer.isTemporary,
+        // to avoid being recorded by the UndoManager
+        _viewPosition: new go.Point(1385, 25)  // some position in the viewport,
+        // not in document coordinates
+      },
+      $(go.TextBlock, "Wikidata & Wikibase Technical Vision", { font: "bold 20pt sans-serif" })));
+
+  // Key
+  myDiagram.add(
+    $(go.Part,
+      { layerName: "Grid", _viewPosition: new go.Point(1775, 760), },
+      $(go.TextBlock, "Done", { font: "bold 12pt sans-serif", "stroke": "lightgreen" })));
+
+  myDiagram.add(
+    $(go.Part,
+      { layerName: "Grid", _viewPosition: new go.Point(1775, 760 + 25), },
+      $(go.TextBlock, "In Progress", { font: "bold 12pt sans-serif", "stroke": "lightcoral" })));
+
+  myDiagram.add(
+    $(go.Part,
+      { layerName: "Grid", _viewPosition: new go.Point(1775, 760 + 25 + 25), },
+      $(go.TextBlock, "Not Started", { font: "bold 12pt sans-serif", "stroke": "lightsalmon" })));
+
+  // Whenever the Diagram.position or Diagram.scale change,
+  // update the position of all simple Parts that have a _viewPosition property.
+  // this is used for the title and keys
+  myDiagram.addDiagramListener("ViewportBoundsChanged", function (e) {
+    e.diagram.commit(function (dia) {
+      // only iterates through simple Parts in the diagram, not Nodes or Links
+      dia.parts.each(function (part) {
+        // and only on those that have the "_viewPosition" property set to a Point
+        if (part._viewPosition) {
+          part.position = dia.transformViewToDoc(part._viewPosition);
+          part.scale = 1 / dia.scale;
+        }
+      })
+    }, "fix Parts");
+  });
+
   // when the document is modified, add a "*" to the title and enable the "Save" button
   myDiagram.addDiagramListener("Modified", function (e) {
     var button = document.getElementById("SaveButton");
