@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/addshore/wikidata-wikibase-vision.git"
+    "url": "git+https://github.com/wmde/wikidata-wikibase-vision.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/addshore/wikidata-wikibase-vision/issues"
+    "url": "https://github.com/wmde/wikidata-wikibase-vision/issues"
   },
-  "homepage": "https://github.com/addshore/wikidata-wikibase-vision#readme"
+  "homepage": "https://github.com/wmde/wikidata-wikibase-vision#readme"
 }

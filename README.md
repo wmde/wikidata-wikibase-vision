@@ -2,13 +2,13 @@
 
 Team owned and developed technical vision diagram for Wikidata & Wikibase.
 
-You can interactively alter this diagram at https://addshore.github.io/wikidata-wikibase-vision/
+You can interactively alter this diagram at https://wmde.github.io/wikidata-wikibase-vision/
 
 Once you have made changes you can create a PR with the updated JSON.
 
-Changes on master will render a new diagram image visible at https://addshore.github.io/wikidata-wikibase-vision/diagram.png once the Github action for the merge has fired (and cache has purged).
+Changes on master will render a new diagram image visible at https://wmde.github.io/wikidata-wikibase-vision/diagram.png once the Github action for the merge has fired (and cache has purged).
 
-![](https://addshore.github.io/wikidata-wikibase-vision/diagram.png)
+![](https://wmde.github.io/wikidata-wikibase-vision/diagram.png)
 
 ## Repo Utilities
 
