@@ -51,9 +51,9 @@ var $ = go.GraphObject.make;
   myDiagram.add(
     $(go.Part,
       {
-        layerName: "Grid",  // must be in a Layer that is Layer.isTemporary,
+        layerName: "Foreground",  // must be in a Layer that is Layer.isTemporary,
         // to avoid being recorded by the UndoManager
-        _viewPosition: new go.Point(1385, 25)  // some position in the viewport,
+        _viewPosition: new go.Point(1285, 25)  // some position in the viewport,
         // not in document coordinates
       },
       $(go.TextBlock, "Wikidata & Wikibase Technical Vision", { font: "bold 20pt sans-serif" })));
@@ -61,17 +61,17 @@ var $ = go.GraphObject.make;
   // Key
   myDiagram.add(
     $(go.Part,
-      { layerName: "Grid", _viewPosition: new go.Point(1775, 760), },
+      { layerName: "Foreground", _viewPosition: new go.Point(1775, 760), },
       $(go.TextBlock, "Done", { font: "bold 12pt sans-serif", "stroke": "lightgreen" })));
 
   myDiagram.add(
     $(go.Part,
-      { layerName: "Grid", _viewPosition: new go.Point(1775, 760 + 25), },
+      { layerName: "Foreground", _viewPosition: new go.Point(1775, 760 + 25), },
       $(go.TextBlock, "In Progress", { font: "bold 12pt sans-serif", "stroke": "lightcoral" })));
 
   myDiagram.add(
     $(go.Part,
-      { layerName: "Grid", _viewPosition: new go.Point(1775, 760 + 25 + 25), },
+      { layerName: "Foreground", _viewPosition: new go.Point(1775, 760 + 25 + 25), },
       $(go.TextBlock, "Not Started", { font: "bold 12pt sans-serif", "stroke": "lightsalmon" })));
 
   // Whenever the Diagram.position or Diagram.scale change,
