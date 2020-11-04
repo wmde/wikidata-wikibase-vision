@@ -5,7 +5,7 @@
         "key": 0,
         "text": "Wikidata & Wikibase",
         "brush": "lightseagreen",
-        "loc": "0 0",
+        "loc": "114 -15",
         "font": "bold 9pt sans-serif",
         "background": null
       },
@@ -15,7 +15,7 @@
         "text": "For Wikimedia",
         "brush": "palevioletred",
         "dir": "left",
-        "loc": "-50 -284.3125",
+        "loc": "64 -299.3125",
         "font": "bold 9pt sans-serif",
         "background": null
       },
@@ -25,17 +25,17 @@
         "text": "Scaling",
         "brush": "palevioletred",
         "dir": "left",
-        "loc": "-183.908203125 -341.6875"
+        "loc": "-69.908203125 -356.6875"
       },
       {
-        "text": "UI",
+        "text": "Content",
         "brush": "palegreen",
         "dir": "right",
         "parent": 0,
         "key": -56,
-        "loc": "168.484375 -236.56333780160855",
+        "loc": "139.484375 -272.3770203336809",
         "font": "bold 9pt sans-serif",
-        "background": "lightsalmon"
+        "background": null
       },
       {
         "text": "APIs",
@@ -43,7 +43,7 @@
         "dir": "right",
         "parent": 0,
         "key": -57,
-        "loc": "168.484375 -108.31333780160855",
+        "loc": "393.484375 -159.0020203336809",
         "font": "bold 9pt sans-serif",
         "background": "lightsalmon"
       },
@@ -53,57 +53,24 @@
         "dir": "left",
         "parent": 0,
         "key": -54,
-        "loc": "-50 -4.1875",
+        "loc": "64 -19.1875",
         "font": "bold 9pt sans-serif",
         "background": "lightsalmon"
       },
       {
-        "text": "Vue only UI",
-        "brush": "palegreen",
-        "dir": "right",
-        "parent": -56,
-        "key": -60,
-        "loc": "240.484375 -270.31333780160855"
-      },
-      {
-        "text": "Component system",
-        "brush": "palegreen",
-        "dir": "right",
-        "parent": -56,
-        "key": -61,
-        "loc": "240.484375 -243.31333780160855",
-        "background": "lightsalmon"
-      },
-      {
-        "text": "Entities",
+        "text": "",
         "brush": "palegreen",
         "dir": "right",
         "parent": -56,
         "key": -62,
-        "loc": "240.484375 -202.81333780160855"
-      },
-      {
-        "text": "Compact UI",
-        "brush": "palegreen",
-        "dir": "right",
-        "parent": -62,
-        "key": -63,
-        "loc": "331.8359375 -216.31333780160855"
-      },
-      {
-        "text": "Faster editing",
-        "brush": "palegreen",
-        "dir": "right",
-        "parent": -62,
-        "key": -64,
-        "loc": "331.8359375 -189.31333780160855"
+        "loc": "236.806640625 -316.2520203336809"
       },
       {
         "text": "MediaWiki Extensions",
         "brush": "lightcoral",
         "parent": 0,
         "key": -52,
-        "loc": "168.484375 22.31333780160861",
+        "loc": "282.484375 -21.372979666319054",
         "font": "bold 9pt sans-serif",
         "dir": "right",
         "background": "lightgreen"
@@ -113,7 +80,7 @@
         "brush": "lightcoral",
         "parent": -52,
         "key": -53,
-        "loc": "346.408203125 -24.93666219839139",
+        "loc": "460.408203125 -68.62297966631905",
         "dir": "right",
         "background": "lightsalmon"
       },
@@ -123,7 +90,7 @@
         "dir": "right",
         "parent": -57,
         "key": -55,
-        "loc": "247.162109375 -175.81333780160855",
+        "loc": "472.162109375 -226.5020203336809",
         "background": "lightsalmon"
       },
       {
@@ -132,7 +99,7 @@
         "dir": "right",
         "parent": -57,
         "key": -70,
-        "loc": "247.162109375 -148.81333780160855"
+        "loc": "472.162109375 -199.5020203336809"
       },
       {
         "text": "Batch",
@@ -140,7 +107,7 @@
         "dir": "right",
         "parent": -57,
         "key": -71,
-        "loc": "247.162109375 -121.81333780160855"
+        "loc": "472.162109375 -172.5020203336809"
       },
       {
         "text": "Deferred",
@@ -148,14 +115,14 @@
         "dir": "right",
         "parent": -57,
         "key": -72,
-        "loc": "247.162109375 -94.81333780160855"
+        "loc": "472.162109375 -145.5020203336809"
       },
       {
         "text": "Extension Registration",
         "brush": "lightcoral",
         "parent": -53,
         "key": -46,
-        "loc": "542.455078125 -65.43666219839139",
+        "loc": "656.455078125 -109.12297966631905",
         "dir": "right",
         "background": "lightgreen"
       },
@@ -164,7 +131,7 @@
         "brush": "lightcoral",
         "parent": -53,
         "key": -47,
-        "loc": "542.455078125 -38.43666219839139",
+        "loc": "656.455078125 -82.12297966631905",
         "dir": "right"
       },
       {
@@ -172,7 +139,7 @@
         "brush": "lightcoral",
         "parent": -53,
         "key": -50,
-        "loc": "542.455078125 -11.436662198391389",
+        "loc": "656.455078125 -55.122979666319054",
         "dir": "right"
       },
       {
@@ -180,7 +147,7 @@
         "brush": "lightcoral",
         "parent": -53,
         "key": -58,
-        "loc": "542.455078125 15.563337801608611",
+        "loc": "656.455078125 -28.122979666319054",
         "dir": "right"
       },
       {
@@ -188,7 +155,7 @@
         "brush": "lightcoral",
         "parent": -52,
         "key": -59,
-        "loc": "346.408203125 42.56333780160861",
+        "loc": "460.408203125 -1.122979666319054",
         "dir": "right",
         "background": "lightgreen"
       },
@@ -197,7 +164,7 @@
         "brush": "lightcoral",
         "parent": -59,
         "key": -73,
-        "loc": "505.119140625 42.56333780160861",
+        "loc": "619.119140625 -1.122979666319054",
         "dir": "right",
         "background": "lightgreen"
       },
@@ -206,7 +173,7 @@
         "brush": "goldenrod",
         "parent": 0,
         "key": -38,
-        "loc": "168.484375 150.5633378016086",
+        "loc": "282.484375 106.87702033368089",
         "font": "bold 9pt sans-serif",
         "dir": "right",
         "background": "lightsalmon"
@@ -216,7 +183,7 @@
         "brush": "goldenrod",
         "parent": -38,
         "key": -39,
-        "loc": "271.173828125 96.56333780160861",
+        "loc": "385.173828125 52.87702033368089",
         "dir": "right"
       },
       {
@@ -224,7 +191,7 @@
         "brush": "goldenrod",
         "parent": -38,
         "key": -42,
-        "loc": "271.173828125 123.56333780160861",
+        "loc": "385.173828125 79.87702033368089",
         "dir": "right"
       },
       {
@@ -233,7 +200,7 @@
         "dir": "left",
         "parent": -54,
         "key": -44,
-        "loc": "-186.697265625 -159.4375"
+        "loc": "-72.697265625 -174.4375"
       },
       {
         "text": "Docker images v2",
@@ -241,7 +208,7 @@
         "dir": "left",
         "parent": -44,
         "key": -51,
-        "loc": "-282.044921875 -199.9375"
+        "loc": "-168.044921875 -214.9375"
       },
       {
         "text": "Documented releases",
@@ -249,7 +216,7 @@
         "dir": "left",
         "parent": -44,
         "key": -78,
-        "loc": "-282.044921875 -172.9375"
+        "loc": "-168.044921875 -187.9375"
       },
       {
         "text": "Website home for the software",
@@ -257,7 +224,7 @@
         "dir": "left",
         "parent": -44,
         "key": -79,
-        "loc": "-282.044921875 -145.9375"
+        "loc": "-168.044921875 -160.9375"
       },
       {
         "text": "Entity save resources",
@@ -265,7 +232,7 @@
         "dir": "left",
         "parent": 32,
         "key": -65,
-        "loc": "-275.265625 -375.4375"
+        "loc": "-161.265625 -390.4375"
       },
       {
         "text": "Visibility of sub graphs",
@@ -273,7 +240,7 @@
         "dir": "left",
         "parent": 32,
         "key": -43,
-        "loc": "-275.265625 -307.9375"
+        "loc": "-161.265625 -322.9375"
       },
       {
         "text": "Modern Edit / Action filter",
@@ -281,14 +248,14 @@
         "dir": "left",
         "parent": -65,
         "key": -66,
-        "loc": "-441.98046875 -388.9375"
+        "loc": "-327.98046875 -403.9375"
       },
       {
         "text": "Processes",
         "brush": "rebeccapurple",
         "parent": 0,
         "key": -67,
-        "loc": "168.484375 258.56333780160855",
+        "loc": "282.484375 214.8770203336809",
         "font": "bold 9pt sans-serif",
         "dir": "right"
       },
@@ -297,7 +264,7 @@
         "brush": "rebeccapurple",
         "parent": -67,
         "key": -68,
-        "loc": "280.53125 231.56333780160855",
+        "loc": "394.53125 187.8770203336809",
         "dir": "right"
       },
       {
@@ -305,7 +272,7 @@
         "brush": "rebeccapurple",
         "parent": -67,
         "key": -69,
-        "loc": "280.53125 258.56333780160855",
+        "loc": "394.53125 214.8770203336809",
         "dir": "right"
       },
       {
@@ -313,7 +280,7 @@
         "brush": "rebeccapurple",
         "parent": -69,
         "key": -80,
-        "loc": "525.310546875 258.56333780160855",
+        "loc": "639.310546875 214.8770203336809",
         "dir": "right"
       },
       {
@@ -321,7 +288,7 @@
         "brush": "rebeccapurple",
         "parent": -67,
         "key": -81,
-        "loc": "280.53125 285.56333780160855",
+        "loc": "394.53125 241.8770203336809",
         "dir": "right"
       },
       {
@@ -330,7 +297,7 @@
         "dir": "left",
         "parent": -43,
         "key": -83,
-        "loc": "-446.439453125 -334.9375"
+        "loc": "-332.4453125 -349.9375"
       },
       {
         "text": "Search",
@@ -338,7 +305,7 @@
         "dir": "left",
         "parent": -43,
         "key": -84,
-        "loc": "-446.439453125 -307.9375"
+        "loc": "-332.4453125 -322.9375"
       },
       {
         "text": "etc.",
@@ -346,14 +313,14 @@
         "dir": "left",
         "parent": -43,
         "key": -85,
-        "loc": "-446.439453125 -280.9375"
+        "loc": "-332.4453125 -295.9375"
       },
       {
         "text": "Abstract MediaWiki binding",
         "brush": "lightcoral",
         "parent": -52,
         "key": -86,
-        "loc": "346.408203125 69.56333780160861",
+        "loc": "460.408203125 25.877020333680946",
         "dir": "right"
       },
       {
@@ -362,7 +329,7 @@
         "dir": "right",
         "parent": -57,
         "key": -87,
-        "loc": "247.162109375 -67.81333780160855"
+        "loc": "472.162109375 -118.50202033368089"
       },
       {
         "text": "Wikibase Core",
@@ -370,7 +337,7 @@
         "dir": "left",
         "parent": -54,
         "key": -74,
-        "loc": "-186.697265625 -51.4375",
+        "loc": "-72.697265625 -66.4375",
         "background": "lightsalmon"
       },
       {
@@ -379,7 +346,7 @@
         "dir": "left",
         "parent": -74,
         "key": -75,
-        "loc": "-316.720703125 -91.9375",
+        "loc": "-202.720703125 -106.9375",
         "background": "lightsalmon"
       },
       {
@@ -388,7 +355,7 @@
         "dir": "left",
         "parent": -74,
         "key": -88,
-        "loc": "-316.720703125 -64.9375"
+        "loc": "-202.720703125 -79.9375"
       },
       {
         "text": "More Data types",
@@ -396,7 +363,7 @@
         "dir": "left",
         "parent": -74,
         "key": -89,
-        "loc": "-316.720703125 -37.9375"
+        "loc": "-202.720703125 -52.9375"
       },
       {
         "text": "Non Commons Media",
@@ -404,7 +371,7 @@
         "dir": "left",
         "parent": -89,
         "key": -90,
-        "loc": "-456.7578125 -37.9375"
+        "loc": "-342.7578125 -52.9375"
       },
       {
         "text": "Other Services",
@@ -412,7 +379,7 @@
         "dir": "left",
         "parent": -54,
         "key": -77,
-        "loc": "-186.697265625 56.5625",
+        "loc": "-72.697265625 41.5625",
         "background": "lightsalmon"
       },
       {
@@ -421,14 +388,14 @@
         "dir": "left",
         "parent": -77,
         "key": -91,
-        "loc": "-318.056640625 16.0625"
+        "loc": "-204.056640625 1.0625"
       },
       {
         "text": "Well Defined",
         "brush": "goldenrod",
         "parent": -38,
         "key": -76,
-        "loc": "271.173828125 150.5633378016086",
+        "loc": "385.173828125 106.87702033368089",
         "dir": "right"
       },
       {
@@ -436,7 +403,7 @@
         "brush": "goldenrod",
         "parent": -38,
         "key": -82,
-        "loc": "271.173828125 177.5633378016086",
+        "loc": "385.173828125 133.8770203336809",
         "dir": "right"
       },
       {
@@ -444,7 +411,7 @@
         "brush": "goldenrod",
         "parent": -38,
         "key": -92,
-        "loc": "271.173828125 204.5633378016086",
+        "loc": "385.173828125 160.8770203336809",
         "dir": "right"
       },
       {
@@ -453,7 +420,7 @@
         "dir": "left",
         "parent": -77,
         "key": -93,
-        "loc": "-318.056640625 43.0625",
+        "loc": "-204.056640625 28.0625",
         "background": "lightsalmon"
       },
       {
@@ -462,7 +429,7 @@
         "dir": "left",
         "parent": -74,
         "key": -94,
-        "loc": "-316.720703125 -10.9375"
+        "loc": "-202.720703125 -25.9375"
       },
       {
         "text": "For Developers",
@@ -470,7 +437,7 @@
         "dir": "left",
         "parent": 0,
         "key": -95,
-        "loc": "-50 306.3125",
+        "loc": "64 291.3125",
         "font": "bold 9pt sans-serif",
         "background": "lightsalmon"
       },
@@ -480,7 +447,7 @@
         "dir": "left",
         "parent": -95,
         "key": -96,
-        "loc": "-189.36328125 232.0625",
+        "loc": "-75.36328125 217.0625",
         "background": "lightsalmon"
       },
       {
@@ -489,7 +456,7 @@
         "dir": "left",
         "parent": -96,
         "key": -97,
-        "loc": "-382.767578125 205.0625"
+        "loc": "-268.767578125 190.0625"
       },
       {
         "text": "Featured",
@@ -497,7 +464,7 @@
         "dir": "left",
         "parent": -96,
         "key": -98,
-        "loc": "-382.767578125 232.0625"
+        "loc": "-268.767578125 217.0625"
       },
       {
         "text": "Documentation",
@@ -505,7 +472,7 @@
         "dir": "left",
         "parent": -95,
         "key": -99,
-        "loc": "-189.36328125 313.0625",
+        "loc": "-75.36328125 298.0625",
         "background": "lightsalmon"
       },
       {
@@ -514,7 +481,7 @@
         "dir": "left",
         "parent": -99,
         "key": -100,
-        "loc": "-322.076171875 286.0625",
+        "loc": "-208.076171875 271.0625",
         "background": "lightsalmon"
       },
       {
@@ -523,7 +490,7 @@
         "dir": "left",
         "parent": -99,
         "key": -101,
-        "loc": "-322.076171875 313.0625",
+        "loc": "-208.076171875 298.0625",
         "background": "lightsalmon"
       },
       {
@@ -532,7 +499,7 @@
         "dir": "left",
         "parent": -99,
         "key": -102,
-        "loc": "-322.076171875 340.0625"
+        "loc": "-208.076171875 325.0625"
       },
       {
         "text": "Documented optimized configurations",
@@ -540,7 +507,7 @@
         "dir": "left",
         "parent": -44,
         "key": -103,
-        "loc": "-282.044921875 -118.9375"
+        "loc": "-168.044921875 -133.9375"
       },
       {
         "text": "Misc Triple store support",
@@ -548,7 +515,7 @@
         "dir": "left",
         "parent": -77,
         "key": -104,
-        "loc": "-318.056640625 70.0625"
+        "loc": "-204.056640625 55.0625"
       },
       {
         "text": "Granular entity alterations",
@@ -556,7 +523,7 @@
         "dir": "left",
         "parent": -65,
         "key": -105,
-        "loc": "-441.98046875 -361.9375"
+        "loc": "-327.98046875 -376.9375"
       },
       {
         "text": "Versioning",
@@ -564,7 +531,7 @@
         "dir": "right",
         "parent": -57,
         "key": -106,
-        "loc": "247.162109375 -40.813337801608554",
+        "loc": "472.162109375 -91.50202033368089",
         "background": "lightsalmon"
       },
       {
@@ -573,7 +540,7 @@
         "dir": "left",
         "parent": -77,
         "key": -107,
-        "loc": "-318.056640625 97.0625"
+        "loc": "-204.056640625 82.0625"
       },
       {
         "text": "Wikibase as a service",
@@ -581,7 +548,7 @@
         "dir": "left",
         "parent": -93,
         "key": -108,
-        "loc": "-534.7890625 44.0625"
+        "loc": "-385.802734375 -11.9375"
       },
       {
         "text": "\"Wikimedia\" as a service",
@@ -589,7 +556,7 @@
         "dir": "left",
         "parent": -108,
         "key": -109,
-        "loc": "-702.828125 44.0625"
+        "loc": "-400.841796875 49.0625"
       },
       {
         "text": "Micro contributions",
@@ -597,7 +564,7 @@
         "dir": "left",
         "parent": 3,
         "key": -110,
-        "loc": "-183.908203125 -280.9375"
+        "loc": "-69.908203125 -295.9375"
       },
       {
         "text": "MediaWiki Extension",
@@ -605,7 +572,7 @@
         "dir": "left",
         "parent": -54,
         "key": -111,
-        "loc": "-186.697265625 151.0625"
+        "loc": "-72.697265625 136.0625"
       },
       {
         "text": "Alternate Authentication methods",
@@ -613,7 +580,7 @@
         "dir": "left",
         "parent": -111,
         "key": -112,
-        "loc": "-350.072265625 124.0625"
+        "loc": "-236.072265625 109.0625"
       },
       {
         "text": "Spam Protection",
@@ -621,7 +588,7 @@
         "dir": "left",
         "parent": -111,
         "key": -113,
-        "loc": "-350.072265625 151.0625"
+        "loc": "-236.072265625 136.0625"
       },
       {
         "text": "Seeded data",
@@ -629,7 +596,7 @@
         "dir": "left",
         "parent": -96,
         "key": -114,
-        "loc": "-382.767578125 259.0625",
+        "loc": "-268.767578125 244.0625",
         "background": null
       },
       {
@@ -638,7 +605,7 @@
         "dir": "left",
         "parent": -95,
         "key": -115,
-        "loc": "-189.36328125 380.5625"
+        "loc": "-75.36328125 365.5625"
       },
       {
         "text": "Outreach (Blogs etc)",
@@ -646,7 +613,7 @@
         "dir": "left",
         "parent": -115,
         "key": -116,
-        "loc": "-293.388671875 367.0625"
+        "loc": "-179.388671875 352.0625"
       },
       {
         "text": "SDK / Client libraries",
@@ -654,7 +621,7 @@
         "dir": "left",
         "parent": -115,
         "key": -117,
-        "loc": "-293.388671875 394.0625"
+        "loc": "-179.388671875 379.0625"
       },
       {
         "text": "Inter Project Reconciliation",
@@ -662,7 +629,7 @@
         "dir": "left",
         "parent": 3,
         "key": -118,
-        "loc": "-183.908203125 -253.9375"
+        "loc": "-69.908203125 -268.9375"
       },
       {
         "text": "Dataset dumps and exposure",
@@ -670,7 +637,7 @@
         "dir": "left",
         "parent": 3,
         "key": -119,
-        "loc": "-183.908203125 -226.9375"
+        "loc": "-69.908203125 -241.9375"
       },
       {
         "text": "Faster & Bulk imports",
@@ -678,7 +645,178 @@
         "dir": "left",
         "parent": -111,
         "key": -120,
-        "loc": "-350.072265625 178.0625"
+        "loc": "-236.072265625 163.0625"
+      },
+      {
+        "text": "Quality",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -62,
+        "key": -121,
+        "loc": "308.806640625 -316.2520203336809"
+      },
+      {
+        "text": "Citations",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -121,
+        "key": -122,
+        "loc": "398.154296875 -363.5020203336809"
+      },
+      {
+        "text": "generate from",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -122,
+        "key": -123,
+        "loc": "496.841796875 -390.5020203336809"
+      },
+      {
+        "text": "Constraints",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -121,
+        "key": -124,
+        "loc": "398.154296875 -269.0020203336809"
+      },
+      {
+        "text": "fail on violation",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -124,
+        "key": -125,
+        "loc": "529.845703125 -252.5020203336809"
+      },
+      {
+        "text": "motivate",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -122,
+        "key": -126,
+        "loc": "531.841796875 -295.5020203336809"
+      },
+      {
+        "text": "include in property/documentation examples",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -126,
+        "key": -127,
+        "loc": "629.193359375 -322.5020203336809"
+      },
+      {
+        "text": "highlight in user statistics",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -126,
+        "key": -128,
+        "loc": "629.193359375 -295.5020203336809"
+      },
+      {
+        "text": "deprecate/hide unsourced statements",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -126,
+        "key": -129,
+        "loc": "629.193359375 -268.5020203336809"
+      },
+      {
+        "text": "aggregate stats",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -124,
+        "key": -130,
+        "loc": "532.845703125 -222.5020203336809"
+      },
+      {
+        "text": "\"violation budget\" per editor",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -130,
+        "key": -131,
+        "loc": "667.568359375 -222.5020203336809"
+      },
+      {
+        "text": "UI",
+        "brush": "lightseagreen",
+        "dir": "right",
+        "parent": 0,
+        "key": -132,
+        "loc": "150.484375 -101.62297966631911",
+        "font": "bold 9pt sans-serif",
+        "background": "lightcoral"
+      },
+      {
+        "text": "Vue-only UI",
+        "brush": "lightseagreen",
+        "dir": "right",
+        "parent": -132,
+        "key": -133,
+        "loc": "222.484375 -115.12297966631911"
+      },
+      {
+        "text": "Component system",
+        "brush": "lightseagreen",
+        "dir": "right",
+        "parent": -132,
+        "key": -134,
+        "loc": "222.484375 -88.12297966631911",
+        "background": "lightsalmon"
+      },
+      {
+        "text": "Quantity",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -56,
+        "key": -135,
+        "loc": "236.806640625 -228.5020203336809"
+      },
+      {
+        "text": "Compact UI",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -135,
+        "key": -136,
+        "loc": "333.49609375 -242.0020203336809"
+      },
+      {
+        "text": "Faster editing",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -135,
+        "key": -137,
+        "loc": "333.49609375 -215.0020203336809"
+      },
+      {
+        "text": "URI",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -123,
+        "key": -138,
+        "loc": "591.548828125 -419.0020203336809"
+      },
+      {
+        "text": "wikitext",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -123,
+        "key": -139,
+        "loc": "623.548828125 -404.0020203336809"
+      },
+      {
+        "text": "academic reference",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -123,
+        "key": -140,
+        "loc": "623.548828125 -377.0020203336809"
+      },
+      {
+        "text": "isbn/doi/etc.",
+        "brush": "palegreen",
+        "dir": "right",
+        "parent": -123,
+        "key": -141,
+        "loc": "623.548828125 -350.0020203336809"
       }
     ]
   }
